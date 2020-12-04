@@ -30,13 +30,28 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+  <!-- Use of constructor function or newer syntactical sugar (state = {}) and render method.  Use of this.state to utilize in stateful constructor component. -->
+
 2. Describe the different phases of the component lifecycle.
+
+  <!-- Mounting, Updating, and Unmounting.
+  During the mountaing phase, components are rendered and then mounted.
+  During the updating phase, data may be updated through events or API calls and the like -- this will trigger a re-render unless prevented.
+  During the unmounting phase, the component is removed from the browser/screen and unmounted. -->
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+  <!-- componentDidMount -- has the component rendered to the DOM?
+  shouldComponentUpdate -- has anything been updated, such as props, events, etc?
+  componentWillUnmount -- component is removed from DOM. -->
+
 4. Define stateful logic.
 
+  <!-- Stateful logic pertains to non-visual business logic, all the goings-on behind the scene that make the App function. (Although the logic behind actual visual elements, such as JSX's CSS, can still be considered stateful in the right context.) -->
+
 5. Describe how to test a React component with React Testing Library.
+
+  <!-- Define what is an expected behavior, such as what you'd expect to happen when clicking on a hamburger nav icon, and then write a test describing the expected behavior's outcome. Run test. Do not gouge eyeballs out when it fails. -->
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -54,9 +69,9 @@ _Please follow the setup instructions closely so that you can get everything up 
 
 **Basic set up**
 
-- [ ] Create a forked copy of this project
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] [OPTIONAL] Create a new branch: git checkout -b `<firstName-lastName>`. If you choose to do this, you will need to merge your working branch into the master branch and push your final code to master in order for the submission to work with CodeGrade.
+- [x] Create a forked copy of this project
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] [OPTIONAL] Create a new branch: git checkout -b `<firstName-lastName>`. If you choose to do this, you will need to merge your working branch into the master branch and push your final code to master in order for the submission to work with CodeGrade.
 
 \_Note: Ignore the `mocks` directory. That is in place for the CodeGrade tests
 
