@@ -1,13 +1,14 @@
-import React from "react";
-import { screen, getByLabelText, render } from "@testing-library/react";
+import React from 'react';
+import { screen, render } from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect'
 import userEvent from '@testing-library/user-event'
-import CheckoutForm from "./CheckoutForm";
+import CheckoutForm from './CheckoutForm';
 
 // Write up the two tests here and make sure they are testing what the title shows
 
 test("form header renders", () => {
-    const { getByText } = render(<CheckoutForm />)
-        getByText(/checkout form/i)
+    render(<CheckoutForm />)
+    screen.getByText(/checkout form/i)
 });
 
 test("form shows success message on submit with form details", () => {
@@ -33,10 +34,10 @@ test("form shows success message on submit with form details", () => {
     const button = screen.getByRole("button")
     userEvent.click(button);
 
+    const showSuccessMessage = screen.getByText(/Woo-hoo!/i)
 
         //Assert
 
-    // expect(screen.getByText(/Angel/i).toBeinTheDocument();
-    // expect(screen.getByText(/AngelLN/i).toBeinTheDocument();
+    expect(showSuccessMessage).toBeTruthy()
 
 });
