@@ -3,13 +3,13 @@
 
 import { useState } from 'react'
 
-export default useForm = (initialValue) => {
+export const useForm = (initialValue) => {
 
     const [value, setValue] = useState(initialValue)
 
     const handleChanges = e => {
         setValue({
-            ...values, 
+            ...value, 
         [e.target.name]: e.target.value
         })
     }
