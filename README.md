@@ -35,9 +35,9 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 2. Describe the different phases of the component lifecycle.
 
   <!-- Mounting, Updating, and Unmounting.
-  During the mountaing phase, components are rendered and then mounted.
-  During the updating phase, data may be updated through events or API calls and the like -- this will trigger a re-render unless prevented.
-  During the unmounting phase, the component is removed from the browser/screen and unmounted. -->
+  During the mountaing phase, components are rendered to the DOM and then mounted.
+  During the updating phase, data may be updated through events or API calls and the like -- this will then trigger a re-render unless prevented.
+  During the unmounting phase, the component is removed from the DOM and unmounted. -->
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
