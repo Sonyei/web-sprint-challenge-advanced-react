@@ -22,9 +22,8 @@ constructor() {
       this.setState({ plants: resData })
     })
     .catch(err => {
-    (console.log(err))
+    (console.log(`You have failed, because of `, err))
   })
-
 }
 
   /*********  DON'T CHANGE ANYTHING IN THE RENDER FUNCTION *********/
