@@ -115,7 +115,7 @@ Display a list of the plants from the server. This should be done in the class c
 
 #### Shopping Cart
 
-Nothing needs to be done here. You _will_ have to navigate to the cart page in your app so you can go to the checkout form for the next step. x 
+Nothing needs to be done here. You _will_ have to navigate to the cart page in your app so you can go to the checkout form for the next step. x
 
 #### Checkout Form
 
@@ -138,7 +138,7 @@ In your solution, it is essential that you follow best practices and produce cle
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
 - [ ] Add a filter input to the plant list page.
-- [ ] Build and implement another custom hook - a dark mode hook would be great for this project, though you'll have to style the light theme ☀️ 🌙
+- [x] Build and implement another custom hook - a dark mode hook would be great for this project, though you'll have to style the light theme ☀️ 🌙
 - [ ] Add a test file for the `ShoppingCart` component and test that it displays plants there (you'll need some mock plant data for the test, and then you can pass that data in as a prop when you call `render` and render the component - see the example below)
 
 ```js
