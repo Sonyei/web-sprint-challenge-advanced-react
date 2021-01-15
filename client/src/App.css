@@ -168,11 +168,12 @@ p {
 }
 
 .success-message {
+	text-align: center;
+	border: 2px solid #cf0;
 	width: 400px;
 	margin: 0 auto;
 	margin-top: 32px;
 	padding: 24px;
-	background-color: #cf0;
 }
 
 form {
