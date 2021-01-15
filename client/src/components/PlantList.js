@@ -3,12 +3,10 @@ import axios from "axios";
 
 export default class PlantList extends Component {
 	// add state with a property called "plants" - initialize as an empty array
-	constructor() {
-		super();
-		this.state = {
-			plants: [],
-		};
-	}
+
+	state = {
+		plants: [],
+	};
 
 	// when the component mounts:
 	//   - fetch data from the server endpoint - http://localhost:3333/plants
@@ -32,7 +30,7 @@ export default class PlantList extends Component {
 		return (
 			<main className="plant-list">
 				{this.state?.plants?.map((plant) => (
-					<div className="plant-card" key={plant.id}>
+					<div className="plant-card" key={plant.id} data-testid="plant-card">
 						<img className="plant-image" src={plant.img} alt={plant.name} />
 						<div className="plant-details">
 							<h2 className="plant-name">{plant.name}</h2>
